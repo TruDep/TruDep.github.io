@@ -1,30 +1,20 @@
-# TruDep.github.io
-Сайт команды разработчиков TruDep
+TruDep
+==============
+Команда разработчиков 1 курса И-2-18
 
-```
-#include <iostream>
-#include <cmath>
-//#include <fstream>
-//#include <math.h>
+***Содержание:***
+- [Состав команды](#Command_structure)
 
 
 
-using namespace std;
 
 
 
-int main() {
-	int a1, a2, a3;
-	int b1, b2, b3;
 
 
-	cin >> a1 >> b1;
-	cin >> a2 >> b2;
-	cin >> a3 >> b3;
-
-	cout	<< a1 - a3 << " "
-			<< b1 - b2;
-
-	return 0;
-}
-```
+# Состав команды <a name="Command_structure"></a>
+* ***Артур Аблаев***
+* ***Марк Фисун***
+* ***Мартыненко Роман***
+* ***Сафие Юсупова***
+* ***Евгений Кармацкий***
