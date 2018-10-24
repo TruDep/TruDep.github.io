@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab3</title>
+</head>
+<body>
+    <script>
+        //alert('первое задание')
+        function F1(arg) {
+            console.clear();
+            var c = 77.123456 //b=1 a=Infinitly x=NaN
+            var x = NaN
+            var a = Infinity
+            var b = 1
+
+
+            console.log('_____________________________________')
+            console.log('Первое задание')
+            console.log('_____________________________________')
+            console.log(typeof c);
+            console.log(typeof x);
+            console.log(typeof b);
+            console.log(typeof a);
+            console.log('_____________________________________')
+        }
+        setTimeout(F1, 0);
+
+        //2-е
+        function F2(arg) {
+
+            console.clear();
+            var a = 2e-1
+            var b = 3e3
+            var c = 7.29e2
+            var x = 33e-1
+
+
+
+
+            console.log('_____________________________________')
+            console.log('Второе задание')
+            console.log('_____________________________________')
+
+            console.log(a.toFixed());
+            console.log(b.toFixed());
+            console.log(c.toFixed());
+            console.log(x.toFixed());
+            console.log('_____________________________________')
+        }
+        setTimeout(F2, 5000);
+        //console.clear();
+
+
+        //3-e
+        function F3(arg) {
+
+            console.clear();
+            var a = 7.1
+            var b = 0.000009
+            var c = 33.3
+            var x = 10.001
+
+
+
+            console.log('_____________________________________')
+            console.log('Третье задание')
+            console.log('_____________________________________')
+            console.log(a.toExponential());
+            console.log(b.toExponential());
+            console.log(c.toExponential());
+            console.log(x.toExponential());
+            console.log('_____________________________________')
+        }
+        setTimeout(F3, 10000);
+        //4-e
+        function F4(arg) {
+            console.clear();
+            var a = 1.23456789
+
+
+            console.log('_____________________________________')
+            console.log('Четверое задание')
+            console.log('_____________________________________')
+            console.log(a.toExponential(5));
+            console.log(a.toExponential(1));
+            console.log(a.toExponential(4));
+            console.log(a.toExponential(2));
+            console.log('_____________________________________')
+        }
+        setTimeout(F4, 15000);
+
+        //5-e
+        function F5(arg) {
+            console.clear();
+            var a = 5
+            var b = 77.12345
+            var c = 0.1
+            var x = 1e1
+
+
+
+            console.log('_____________________________________')
+            console.log('Пятое задание')
+            console.log('_____________________________________')
+            console.log(a.toString());
+            console.log(b.toString());
+            console.log(c.toString());
+            console.log(x.toString());
+            console.log(typeof a.toString());
+            console.log(typeof b.toString());
+            console.log(typeof c.toString());
+            console.log(typeof x.toString());
+            console.log('_____________________________________')
+        }
+        setTimeout(F5, 20000);
+
+        //6-e
+
+        function F6(arg) {
+            console.clear();
+            var a = 12345.6789
+            var b = 1.23e+10
+            var c = 1.23e-10
+
+
+            console.log('_____________________________________')
+            console.log('Шестое задание')
+            console.log('_____________________________________')
+            console.log(a.toFixed());
+            console.log(b.toFixed());
+            console.log(c.toFixed());
+
+            console.log(a.toPrecision());
+            console.log(b.toPrecision());
+            console.log(c.toPrecision());
+
+            console.log(a.toFixed(1));
+            console.log(b.toFixed(2));
+            console.log(c.toFixed(6));
+
+            console.log(a.toPrecision(1));
+            console.log(b.toPrecision(2));
+            console.log(c.toPrecision(6));
+            console.log('_____________________________________')
+        }
+        setTimeout(F6, 25000);
+
+        //7-e
+        function F7(arg) {
+            console.clear();
+
+            console.log('_____________________________________')
+            console.log('Седьмое задание')
+            console.log('_____________________________________')
+            console.log(Number.MIN_VALUE);
+            console.log(Number.MAX_VALUE);
+            console.log(Number.NaN);
+            console.log(Number.POSITIVE_INFINITY);
+            console.log(Number.NEGATIVE_INFINITY);
+            console.log('_____________________________________')
+        }
+        setTimeout(F7, 30000);
+
+        //8-e
+
+        function F8(arg) {
+            console.clear();
+            var a = 1.7
+            var b = 25.1
+            var c = 0.1
+
+
+
+            console.log('_____________________________________')
+            console.log('Восьмое задание')
+            console.log('_____________________________________')
+            console.log(Math.ceil(a));
+            console.log(Math.ceil(b));
+            console.log(Math.ceil(c));
+
+            console.log(Math.floor(a));
+            console.log(Math.floor(b));
+            console.log(Math.floor(c));
+
+
+            console.log(Math.round(a));
+            console.log(Math.round(b));
+            console.log(Math.round(c));
+            console.log('_____________________________________')
+        }
+        setTimeout(F8, 35000);
+
+        //9-e
+
+        function F9(arg) {
+            console.clear();
+            var a = 9
+            var b = 2
+            var c = -4
+            var x = 1e2
+
+
+            console.log('_____________________________________')
+            console.log('Девятое задание')
+            console.log('_____________________________________')
+            console.log(Math.sqrt(a));
+            console.log(Math.sqrt(b));
+            console.log(Math.sqrt(c));
+            console.log(Math.sqrt(x));
+            console.log('_____________________________________')
+        }
+        setTimeout(F9, 40000);
+
+        // 10-e
+
+        function F10(arg) {
+            console.clear();
+
+            console.log('_____________________________________')
+            console.log('Десятое задание')
+            console.log('_____________________________________')
+            console.log(Math.min(0.1, 3e-4, 9.9e-2));
+            console.log(Math.max(Infinity, 0, -Infinity));
+            console.log(Math.abs(-1.1));
+            console.log(Math.abs(2));
+            console.log(Math.abs(-3.2));
+            console.log('_____________________________________')
+        }
+        setTimeout(F10, 45000);
+
+        // 11-e
+        function F11(arg) {
+            console.clear();
+
+
+            console.log('_____________________________________')
+            console.log('Одинадцатое задание')
+            console.log('_____________________________________')
+            console.log(Math.random())
+            console.log(Math.random() * (100 - 50) + 50)
+            console.log(Math.floor(Math.random() * (100 - 50 + 1)) + 50)
+            console.log('_____________________________________')
+        }
+        setTimeout(F11, 50000);
+
+
+        /*  var c=77.1234
+        console.log(typeof c.toString(), c ,c.toString(16),c.toString())*/
+        //console.log((10).toString(2))
+        //var c=123456.789
+        //console.log(c.toPrecision(6))
+        //  console.log(c.toFixed(),c.toFixed(1),c.toFixed(6),(1.23e+10).toFixed(2),(1.23e-10).toFixed(2))
+
+        //console.log(Number.MAX_VALUE)
+        //<math>
+        //  console.log(Math.max(12,45,78,123,7))
+        //</math>
+        //console.log(Math.acos(1))
+
+        function F12(arg) {
+            console.clear();
+
+            var c = 77.123456 //b=1 a=Infinitly x=NaN
+            var x = NaN
+            var a = Infinity
+            var b = 1
+
+
+            console.log('_____________________________________')
+            console.log('Первое задание')
+            console.log('_____________________________________')
+            console.log(typeof c);
+            console.log(typeof x);
+            console.log(typeof b);
+            console.log(typeof a);
+            console.log('_____________________________________')
+
+
+            //2-е
+
+            var a = 2e-1
+            var b = 3e3
+            var c = 7.29e2
+            var x = 33e-1
+
+
+
+
+            console.log('_____________________________________')
+            console.log('Второе задание')
+            console.log('_____________________________________')
+
+            console.log(a.toFixed());
+            console.log(b.toFixed());
+            console.log(c.toFixed());
+            console.log(x.toFixed());
+            console.log('_____________________________________')
+
+
+
+            //3-e
+
+            var a = 7.1
+            var b = 0.000009
+            var c = 33.3
+            var x = 10.001
+
+
+
+            console.log('_____________________________________')
+            console.log('Третье задание')
+            console.log('_____________________________________')
+            console.log(a.toExponential());
+            console.log(b.toExponential());
+            console.log(c.toExponential());
+            console.log(x.toExponential());
+            console.log('_____________________________________')
+
+            //4-e
+
+            var a = 1.23456789
+
+
+            console.log('_____________________________________')
+            console.log('Четверое задание')
+            console.log('_____________________________________')
+            console.log(a.toExponential(5));
+            console.log(a.toExponential(1));
+            console.log(a.toExponential(4));
+            console.log(a.toExponential(2));
+            console.log('_____________________________________')
+
+
+            //5-e
+
+            var a = 5
+            var b = 77.12345
+            var c = 0.1
+            var x = 1e1
+
+
+
+            console.log('_____________________________________')
+            console.log('Пятое задание')
+            console.log('_____________________________________')
+            console.log(a.toString());
+            console.log(b.toString());
+            console.log(c.toString());
+            console.log(x.toString());
+            console.log(typeof a.toString());
+            console.log(typeof b.toString());
+            console.log(typeof c.toString());
+            console.log(typeof x.toString());
+            console.log('_____________________________________')
+
+
+            //6-e
+
+            var a = 12345.6789
+            var b = 1.23e+10
+            var c = 1.23e-10
+
+
+            console.log('_____________________________________')
+            console.log('Шестое задание')
+            console.log('_____________________________________')
+            console.log(a.toFixed());
+            console.log(b.toFixed());
+            console.log(c.toFixed());
+
+            console.log(a.toPrecision());
+            console.log(b.toPrecision());
+            console.log(c.toPrecision());
+
+            console.log(a.toFixed(1));
+            console.log(b.toFixed(2));
+            console.log(c.toFixed(6));
+
+            console.log(a.toPrecision(1));
+            console.log(b.toPrecision(2));
+            console.log(c.toPrecision(6));
+            console.log('_____________________________________')
+
+            //7-e
+
+
+            console.log('_____________________________________')
+            console.log('Седьмое задание')
+            console.log('_____________________________________')
+            console.log(Number.MIN_VALUE);
+            console.log(Number.MAX_VALUE);
+            console.log(Number.NaN);
+            console.log(Number.POSITIVE_INFINITY);
+            console.log(Number.NEGATIVE_INFINITY);
+            console.log('_____________________________________')
+
+
+            //8-e
+
+
+            var a = 1.7
+            var b = 25.1
+            var c = 0.1
+
+
+
+            console.log('_____________________________________')
+            console.log('Восьмое задание')
+            console.log('_____________________________________')
+            console.log(Math.ceil(a));
+            console.log(Math.ceil(b));
+            console.log(Math.ceil(c));
+
+            console.log(Math.floor(a));
+            console.log(Math.floor(b));
+            console.log(Math.floor(c));
+
+
+            console.log(Math.round(a));
+            console.log(Math.round(b));
+            console.log(Math.round(c));
+            console.log('_____________________________________')
+
+
+            //9-e
+
+            var a = 9
+            var b = 2
+            var c = -4
+            var x = 1e2
+
+
+            console.log('_____________________________________')
+            console.log('Девятое задание')
+            console.log('_____________________________________')
+            console.log(Math.sqrt(a));
+            console.log(Math.sqrt(b));
+            console.log(Math.sqrt(c));
+            console.log(Math.sqrt(x));
+            console.log('_____________________________________')
+
+
+            // 10-e
+
+
+            console.log('_____________________________________')
+            console.log('Десятое задание')
+            console.log('_____________________________________')
+            console.log(Math.min(0.1, 3e-4, 9.9e-2));
+            console.log(Math.max(Infinity, 0, -Infinity));
+            console.log(Math.abs(-1.1));
+            console.log(Math.abs(2));
+            console.log(Math.abs(-3.2));
+            console.log('_____________________________________')
+
+
+            // 11-e
+
+
+
+            console.log('_____________________________________')
+            console.log('Одинадцатое задание')
+            console.log('_____________________________________')
+            console.log(Math.random())
+            console.log(Math.random() * (100 - 50) + 50)
+            console.log(Math.floor(Math.random() * (100 - 50 + 1)) + 50)
+            console.log('_____________________________________')
+        }
+        setTimeout(F12, 55000, ' ');
+
+    </script>
+</body>
+</html>
