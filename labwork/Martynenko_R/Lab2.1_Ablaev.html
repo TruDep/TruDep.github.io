@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab2.1</title>
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="images/Untitled_-_2.ico">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+  <!--  <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+  <div class="row animate-box">
+    <p><a class="btn btn-primary btn-lg btn-learn" href="https://trudep.github.io/labwork/index.html" target="_blank">Назад</a></p>
+
+    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+
+      <h2><b>ЛАБОРАТОРНАЯ РАБОТА №2 </b></h2>
+      <h3>нажмите f12 --> console </h3>
+
+  <p>По дисциплине: Информатика и программирование</p>
+<p>Тема занятия: Типы данных, оператор typeof()</p>
+  <p>Цель занятия: подготовить окружение для написания первой программы JavaScript </p>
+   <p>Количество часов: 2</p>
+    </div>
+  </div>
+  <div class="row copyright">
+      <div class="col-md-12 text-center">
+          <p>
+              <small class="block">&copy; 2018 Ablaev.A</small>
+              <small class="block">Designed by <a href="https://vk.com/alexwwaiting" target="_blank">Ablaev A(Alexxander1).<a href="https://trudep.github.io/" target="_blank"> The developer TruDep</a>
+          </p>
+          <p>
+
+          </p>
+      </div>
+  </div>
+    <script>
+                            //возвращает арккосинус числа (в радианах)
+        console.log('_____________________________________')
+        console.log('возвращает арккосинус числа (в радианах)')
+        console.log('_____________________________________')
+        console.log(Math.acos(-2));  // NaN
+        console.log(Math.acos(-1));  // 3.141592653589793
+        console.log(Math.acos(0));   // 1.5707963267948966
+        console.log('_____________________________________')
+
+                        //возвращает арксинус числа (в радианах)
+        console.log('_____________________________________')
+        console.log('возвращает арксинус числа (в радианах)')
+        console.log('_____________________________________')
+        console.log(Math.asin(-1));  // -1.5707963267948966 (-pi/2)
+        console.log(Math.asin(0));   // 0
+        console.log('_____________________________________')
+
+                        //возвращает арктангенс числа (в радианах)
+        console.log('_____________________________________')
+        console.log('возвращает арктангенс числа (в радианах)')
+        console.log('_____________________________________')
+        console.log(Math.atan(1)); // 0.7853981633974483
+        console.log(Math.atan(0)); // 0
+        console.log('_____________________________________')
+
+                          //возвращает арктангенс от частного своих аргументов
+        console.log('_____________________________________')
+        console.log('возвращает арктангенс от частного своих аргументов')
+        console.log('_____________________________________')
+        console.log(Math.atan2(90, 15)); // 1.4056476493802699
+        console.log(Math.atan2(15, 90)); // 0.16514867741462683
+        console.log('_____________________________________')
+
+                    //возвращает значение выражения e^x
+        console.log('_____________________________________')
+        console.log('возвращает значение выражения e^x')
+        console.log('_____________________________________')
+        console.log(Math.exp(-1)); // 0.36787944117144233
+        console.log(Math.exp(0));  // 1
+        console.log(Math.exp(1));  // 2.718281828459045
+        console.log('_____________________________________')
+
+                  //выводит минимальную переменную
+        console.log('_____________________________________')
+        console.log('выводит минимальную переменную')
+        console.log('_____________________________________')
+        console.log(Math.min(3,5,3,7,1,6))//выведет минимальный (1)
+        console.log('_____________________________________')
+
+                  //выведет случайное число от 0 до 1
+        console.log('_____________________________________')
+        console.log('Выведет случайное число от 0 до 1')
+        console.log('_____________________________________')
+        console.log(Math.random())
+        console.log('_____________________________________')
+
+                        //извлекает квадратный корень
+        console.log('_____________________________________')
+        console.log('извлекает квадратный корень')
+        console.log('_____________________________________')
+        console.log(Math.sqrt(9))//выведет (3)
+        console.log('_____________________________________')
+
+                        //Вычисляет логорифм
+        console.log('_____________________________________')
+        console.log('Вычисляет логорифм')
+        console.log('_____________________________________')
+        console.log(Math.log(1));  // 0
+        console.log(Math.log(10)); // 2.302585092994046
+        console.log('_____________________________________')
+
+                          //округление
+        console.log('_____________________________________')
+        console.log('округление')
+        console.log('_____________________________________')
+        console.log(Math.round(20.49))// возвратит 20
+        console.log('_____________________________________')
+
+                        //округление в меньшую
+        console.log('_____________________________________')
+        console.log('округление в меньшую')
+        console.log('_____________________________________')
+        console.log(Math.floor(45.95)); //  45
+        console.log('_____________________________________')
+
+                        //округление в большую
+        console.log('_____________________________________')
+        console.log('округление в большую')
+        console.log('_____________________________________')
+        console.log(Math.ceil(.95));    // 1
+        console.log(Math.ceil(4));      // 4
+        console.log(Math.ceil(7.004));  // 8
+        console.log('_____________________________________')
+
+                        //Вычисляет синус
+        console.log('_____________________________________')
+        console.log('Вычисляет синус')
+        console.log('_____________________________________')
+        console.log(Math.sin(0));           // 0
+        console.log(Math.sin(1));           // 0.8414709848078965
+        console.log(Math.sin(Math.PI / 2)); // 1
+        console.log('_____________________________________')
+
+                            //вычисляет косинус
+        console.log('_____________________________________')
+        console.log('вычисляет косинус')
+        console.log('_____________________________________')
+        console.log(Math.cos(0));           // 1
+        console.log(Math.cos(1));           // 0.5403023058681398
+        console.log('_____________________________________')
+
+                            //Вычисляет тангенс
+        console.log('_____________________________________')
+        console.log('Вычисляет тангенс')
+        console.log('_____________________________________')
+        console.log(Math.tan(1)); // 1.5574077246549023
+        console.log('_____________________________________')
+
+                        //возводит в степень число 7
+        console.log('_____________________________________')
+        console.log('возводит в степень число 7')
+        console.log('_____________________________________')
+        console.log(Math.pow(7, 2)); // 49
+        console.log('_____________________________________')
+
+                          //Выводит максимальное число
+        console.log('_____________________________________')
+        console.log('Выводит максимальное число')
+        console.log('_____________________________________')
+        console.log(Math.max(10, 20));   //  20
+        console.log(Math.max(-10, -20)); // -10
+        console.log('_____________________________________')
+
+                              //модуль числа
+        console.log('_____________________________________')
+        console.log('модуль числа')
+        console.log('_____________________________________')
+        console.log(Math.abs('-1'));     // 1
+        console.log(Math.abs(-2));       // 2
+        console.log('_____________________________________')
+
+        console.log('_____________________________________')
+        console.log('Свойства')
+        console.log('_____________________________________')
+        console.log(Math.LN10)//2.302
+        console.log(Math.SQRT2)//1.414
+        console.log(Math.SQRT12)//0.707
+        console.log(Math.PI)//3.141592653589793
+        console.log(Math.LOG10E)//0.434
+        console.log(Math.LOG2E)//1.442
+        console.log(Math.LN2)//0.693
+        console.log(Math.E)//2.718
+        console.log('_____________________________________')
+    </script>
+</body>
+</html>
