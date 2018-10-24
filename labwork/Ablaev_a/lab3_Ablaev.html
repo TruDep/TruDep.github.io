@@ -5,12 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>lab3</title>
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="images/Untitled_-_2.ico">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+
 </head>
 <body>
+  <div class="row animate-box">
+    <p><a class="btn btn-primary btn-lg btn-learn" href="https://trudep.github.io/labwork/index.html" target="_blank">Назад</a></p>
+
+    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+
+      <h2><b>ЛАБОРАТОРНАЯ РАБОТА №3 String</b></h2>
+      <h3>нажмите f12 --> console </h3>
+
+  <p>По дисциплине: Информатика и программирование</p>
+  <p>Тема занятия: Язык JavaScript: переменные и примитивные типы данных</p>
+   <p>Цель занятия: изучить основные типы данных в JavaScript</p>
+   <p>Количество часов: 2</p>
+    </div>
+  </div>
+  <div class="row copyright">
+      <div class="col-md-12 text-center">
+          <p>
+              <small class="block">&copy; 2018 Ablaev.A</small>
+              <small class="block">Designed by <a href="https://vk.com/alexwwaiting" target="_blank">Ablaev A(Alexxander1).<a href="https://trudep.github.io/" target="_blank"> The developer TruDep</a>
+          </p>
+          <p>
+
+          </p>
+      </div>
+  </div>
+
     <script>
         //alert('первое задание')
-        function F1(arg) {
-            console.clear();
+
+
             var c = 77.123456 //b=1 a=Infinitly x=NaN
             var x = NaN
             var a = Infinity
@@ -25,13 +79,13 @@
             console.log(typeof b);
             console.log(typeof a);
             console.log('_____________________________________')
-        }
-        setTimeout(F1, 0);
+
+
 
         //2-е
-        function F2(arg) {
 
-            console.clear();
+
+
             var a = 2e-1
             var b = 3e3
             var c = 7.29e2
@@ -49,15 +103,15 @@
             console.log(c.toFixed());
             console.log(x.toFixed());
             console.log('_____________________________________')
-        }
-        setTimeout(F2, 5000);
+
+
         //console.clear();
 
 
         //3-e
-        function F3(arg) {
 
-            console.clear();
+
+
             var a = 7.1
             var b = 0.000009
             var c = 33.3
@@ -73,11 +127,11 @@
             console.log(c.toExponential());
             console.log(x.toExponential());
             console.log('_____________________________________')
-        }
-        setTimeout(F3, 10000);
+
+
         //4-e
-        function F4(arg) {
-            console.clear();
+
+
             var a = 1.23456789
 
 
@@ -89,12 +143,11 @@
             console.log(a.toExponential(4));
             console.log(a.toExponential(2));
             console.log('_____________________________________')
-        }
-        setTimeout(F4, 15000);
+
 
         //5-e
-        function F5(arg) {
-            console.clear();
+
+
             var a = 5
             var b = 77.12345
             var c = 0.1
@@ -114,13 +167,11 @@
             console.log(typeof c.toString());
             console.log(typeof x.toString());
             console.log('_____________________________________')
-        }
-        setTimeout(F5, 20000);
+
 
         //6-e
 
-        function F6(arg) {
-            console.clear();
+
             var a = 12345.6789
             var b = 1.23e+10
             var c = 1.23e-10
@@ -145,12 +196,12 @@
             console.log(b.toPrecision(2));
             console.log(c.toPrecision(6));
             console.log('_____________________________________')
-        }
-        setTimeout(F6, 25000);
+
+
 
         //7-e
-        function F7(arg) {
-            console.clear();
+
+
 
             console.log('_____________________________________')
             console.log('Седьмое задание')
@@ -161,13 +212,10 @@
             console.log(Number.POSITIVE_INFINITY);
             console.log(Number.NEGATIVE_INFINITY);
             console.log('_____________________________________')
-        }
-        setTimeout(F7, 30000);
 
         //8-e
 
-        function F8(arg) {
-            console.clear();
+
             var a = 1.7
             var b = 25.1
             var c = 0.1
@@ -190,13 +238,10 @@
             console.log(Math.round(b));
             console.log(Math.round(c));
             console.log('_____________________________________')
-        }
-        setTimeout(F8, 35000);
 
         //9-e
 
-        function F9(arg) {
-            console.clear();
+
             var a = 9
             var b = 2
             var c = -4
@@ -211,13 +256,10 @@
             console.log(Math.sqrt(c));
             console.log(Math.sqrt(x));
             console.log('_____________________________________')
-        }
-        setTimeout(F9, 40000);
 
         // 10-e
 
-        function F10(arg) {
-            console.clear();
+
 
             console.log('_____________________________________')
             console.log('Десятое задание')
@@ -228,12 +270,9 @@
             console.log(Math.abs(2));
             console.log(Math.abs(-3.2));
             console.log('_____________________________________')
-        }
-        setTimeout(F10, 45000);
 
         // 11-e
-        function F11(arg) {
-            console.clear();
+
 
 
             console.log('_____________________________________')
@@ -243,8 +282,6 @@
             console.log(Math.random() * (100 - 50) + 50)
             console.log(Math.floor(Math.random() * (100 - 50 + 1)) + 50)
             console.log('_____________________________________')
-        }
-        setTimeout(F11, 50000);
 
 
         /*  var c=77.1234
@@ -260,8 +297,7 @@
         //</math>
         //console.log(Math.acos(1))
 
-        function F12(arg) {
-            console.clear();
+
 
             var c = 77.123456 //b=1 a=Infinitly x=NaN
             var x = NaN
