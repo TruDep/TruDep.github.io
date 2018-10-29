@@ -21,7 +21,10 @@ console.log('_____________________________________')
 //3-е ###########################
 console.log('3 задание')
 console.log('_____________________________________')
-var A = [Math.random(), Math.random(), Math.random()]
+x1 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
+x2 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
+x3 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
+var A = [x1, x2, x3]
 
 console.log(A);
 
@@ -29,7 +32,10 @@ console.log('_____________________________________')
 //4-е ###########################
 console.log('4 задание')
 console.log('_____________________________________')
-var A = [Math.random(), Math.random(), Math.random()]
+x1 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
+x2 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
+x3 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
+var A = [x1, x2, x3]
 for (var i = 0; i < A.length; i++)
 {
     console.log("Значение " + i + " элемента = " + A[i])
