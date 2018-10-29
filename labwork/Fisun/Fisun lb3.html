@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+/*     var a='Ivan';
+      var b='ivanov';
+      var c=a+' '+b;
+      var d='Programming';
+      var admin=name, name='Andrew';
+      var A='1000', B='5', C;
+      C=A
+      A=B
+      B=C
+      alert('A='+A);
+      alert('B='+B);
+      alert('C='+C);
+      console.log('A='+A,'B='+B,'C='+C);
+*/
+    //
+      console.log ("--1--")
+      var a = 77.123456
+      var b = 1
+      var c = Infinity
+      var d = NaN
+      console.log(typeof a)
+      console.log(typeof b)
+      console.log(typeof c)
+      console.log(typeof d)
+      console.log ("--1--")
+console.log ("")
+
+      console.log ("--2--")
+      console.log (2e-1)
+      console.log (3e3)
+      console.log (7.29e2)
+      console.log (33e-1)
+      console.log ("--2--")
+console.log ("")
+
+      console.log ("--3--")
+      console.log (7.1)
+      console.log (0.000009)
+      console.log (33.3)
+      console.log (10.001)
+      console.log ("")
+      console.log(7.1.toExponential()) 
+      console.log(0.000009.toExponential()) 
+      console.log(33.3.toExponential()) 
+      console.log(10.001.toExponential()) 
+      console.log ("--3--")
+console.log ("")
+
+      console.log ("--4--")
+      var some_number = 1.23456789
+  console.log(some_number) 
+      console.log(some_number.toExponential(5)) 
+      console.log(some_number.toExponential(1)) 
+      console.log(some_number.toExponential(4)) 
+      console.log(some_number.toExponential(2)) 
+      console.log ("--4--")
+console.log ("")
+
+      console.log ("--5--")
+      var some_numberA = 5
+        console.log(some_numberA)
+       console.log(some_numberA.toString())
+       console.log(typeof some_number.toString())
+      console.log ("")
+      var some_numberB = 77.12345
+        console.log(some_numberB)
+       console.log(some_numberB.toString())
+       console.log(typeof some_number.toString())
+      console.log ("")
+      var some_numberC = 0.1
+        console.log(some_numberC)
+       console.log(some_numberC.toString())
+       console.log(typeof some_number.toString())
+      console.log ("")
+      var some_numberD = 1e1
+        console.log(some_numberD)
+       console.log(some_numberD.toString())
+       console.log(typeof some_number.toString())
+      console.log ("--5--")
+console.log ("")
+
+      console.log ("--6--")
+      console.log ("Метод toPrecision")
+        console.log("Без параметра -", 12345.6789.toPrecision())
+      console.log("С параметром 1 -", 12345.6789.toPrecision(1))
+      console.log("С параметром 2 -", 12345.6789.toPrecision(2))
+      console.log("С параметром 6 -", 12345.6789.toPrecision(6))
+      console.log ("")
+      console.log ("Метод toFixed")
+      console.log("Без параметра -", 12345.6789.toFixed())
+       console.log("С параметром 1 -", 12345.6789.toFixed(1)) 
+      console.log("С параметром 2 -", 12345.6789.toFixed(2)) 
+      console.log("С параметром 6 -", 12345.6789.toFixed(6)) 
+      console.log ("--6--")
+console.log ("")
+
+      console.log ("--7--")
+      console.log (Number.MIN_VALUE)
+      console.log (Number.MAX_VALUE)
+      console.log (Number.NAN)
+      console.log (Number.POSITIVE_INFINITY)
+      console.log (Number.NEGATIVE_INFINITY)
+      console.log ("--7--")
+console.log ("")
+
+      console.log ("--8--")
+      console.log ("Аргументы(х):", "1.7", "25.1", "0.1")
+      console.log ("")
+      console.log ("Синтаксис Math.round(x) Если дробная часть числа равна 0.5 или больше, то аргумент округляется к следующему большему целому. Если дробная часть меньше, чем 0.5, то округление производится до ближайшего меньшего целого.")
+      console.log (Math.round(1.7))
+      console.log (Math.round(25.1))
+      console.log (Math.round(0.1))
+      console.log ("")
+      console.log ("Синтаксис Math.floor(x) Возвращает наибольшее целое, меньшее или равное аргументу")
+      console.log (Math.floor(1.7))
+      console.log (Math.floor(25.1))
+      console.log (Math.floor(0.1))
+      console.log ("")
+      console.log ("Синтаксис Math.ceil(x) Возвращает наименьшее целое, большее или равное аргументу")
+      console.log (Math.ceil(1.7))
+      console.log (Math.ceil(25.1))
+      console.log (Math.ceil(0.1))
+      console.log ("--8--")
+console.log ("")
+
+      console.log ("--9--")
+      console.log ("Аргументы(х): 9, 2, -4, 1e2,", 9, 2, -4, 1e2)
+      console.log ("")
+      console.log ("Синтаксис Math.sqrt(x) Возвращает квадратный корень из числа. Если число отрицательно, то возвращается NaN")
+      console.log (Math.sqrt(9))
+      console.log (Math.sqrt(2))
+      console.log (Math.sqrt(-4))
+      console.log (Math.sqrt(1e2))
+      console.log ("--9--")
+console.log ("")
+
+      console.log ("--10--")
+      console.log ("Синтаксис Math.min Если аргументов нет, то результатом является Infinity. Если хотя бы один из аргументов не может быть приведен к числу, то результат: NaN")
+      console.log ("Синтаксис Math.max Возвращает наибольший из списка аргументов. Если аргументов нет, то результатом является -Infinity. Если хотя бы один из аргументов не может быть приведен к числу, то результат: NaN")
+      console.log ("")
+      console.log ("Аргументы(х): 0.1, 3e-4, 9.9e-2,", 0.1, 3e-4, 9.9e-2)
+      console.log (Math.min(0.1, 3e-4, 9.9e-2), "min")
+      console.log (Math.max(0.1, 3e-4, 9.9e-2), "max")
+      console.log ("")
+      console.log ("Аргументы(х): Infinity, 0, -Infinity,", Infinity, 0, -Infinity)
+      console.log (Math.min(Infinity, 0, -Infinity), "min")
+      console.log (Math.max(Infinity, 0, -Infinity), "max")
+      console.log ("")
+      console.log ("Синтаксис Math.abs(x) Этот метод возвращает абсолютное значение числа, то есть иными словами - если число неотрицательное, то его и возвращает, а если отрицательное - отбрасывает знак \"минус\". Передача нечисловой строки или undefined/пустой переменной вернет NaN. Передача null вернет 0")
+      console.log ("")
+      console.log ("Аргументы(х): -1.1, 2, -3.2,", -1.1, 2, -3.2)
+      console.log (Math.abs(-1.1))
+      console.log (Math.abs(2))
+      console.log (Math.abs(-3.2))
+      console.log ("--10--")
+console.log ("")
+
+      console.log ("--11--")
+        console.log ("Синтаксис Math.random() Заметим, что числа в яваскрипт хранятся в формате с плавающей точкой IEEE 754 с округлением в сторону ближайшего четного. Поэтому иногда, в очень редких случаях, возможна генерация обычно исключенной верхней границы")
+      console.log ("Случайное число")
+      console.log (Math.random())
+      console.log ("Случайное число между двумя заданными 1-100")
+      console.log (Math.random() * (100 - 1) + 1)
+      console.log ("Случайное целое число между двумя заданными 100-1")
+      console.log (Math.round(Math.random() * (100 - 1 + 1)) + 1)
+      console.log ("--11--")
+console.log ("")
+console.log ("")
+console.log ("")
+console.log ("")
+
+    console.log ("Упражнение 1")
+    var a = "Fisu"
+    var aa = "n"
+    var b = "Mar"
+    var bb = "k"
+    var c = "Danilo"
+    var cc = "vich"
+    console.log (a+aa+" "+b+bb+" "+c+cc+" ")
+    var d = a+aa+" "+b+bb+" "+c+cc+" "
+     console.log(typeof d)
+    var surname = (a+aa)
+    var name = (b+bb)
+    var patronymic = (c+cc)
+    console.log ("Длина слова " + surname +" равна " + surname.length)
+    console.log ("Длина слова " + name +" равна " + name.length)
+    console.log ("Длина слова " + patronymic +" равна " + patronymic.length)
+console.log ("")
+
+    console.log ("Упражнение 2")
+    var a = "Шла Саша по шоссе"
+    console.log("1-й символ - " + a.charAt(0))
+    console.log("2-й символ - " + a[1])
+    console.log("Предпоследний символ - " + a[15])
+    console.log("Последний символ - " + a.charAt(a.length-1))
+console.log ("")
+
+    console.log ("Упражнение 3")
+    console.log ("Шла Саша по шоссе".indexOf(" "))
+console.log ("")
+
+    console.log ("Упражнение 5")
+    var str="Шла cаша по шоссе"
+    var newStr=str.slice(0,4)+str[4].toUpperCase()+str.slice(5,str.length)
+    console.log(newStr)
+console.log ("")
+
+    console.log ("Упражнение 6")
+    var str="Не хочу учится а хочу женится"
+    var newStr=str.slice(0,12)+"ь"+str.slice(12,14)+","+str.slice(14,27)+"ь"+str.slice(27,str.length)+"."
+    console.log(newStr)
+console.log ("")
+
+    </script>
+  </body>
+</html>

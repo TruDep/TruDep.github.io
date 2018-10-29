@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body><script>
+
+  console.log ("Упражнение 1")
+  var Numbers = ["1","2","3","4","5"]
+  console.log(Numbers[1], Numbers[Numbers.length-2], Numbers.length)
+console.log ("")
+
+  console.log ("Упражнение 2")
+  var Letters = ["Строка 1","Строка 2","Строка 3","Строка 4","Строка 5"]
+  Letters[0] = "Строка 3"
+  Letters[2] = "Строка 1"
+  console.log(Letters)
+console.log ("")
+
+  console.log ("Упражнение 3")
+  var A = [Math.round(Math.random()),Math.round(Math.random()),Math.round(Math.random())]
+  console.log(A)
+console.log ("")
+
+  console.log ("Упражнение 4")
+  var A = [Math.round(Math.random()),Math.round(Math.random()),Math.round(Math.random())]
+  console.log(A)
+  A.unshift(100)
+  A.push(100)
+  console.log(A)
+  A.shift()
+  A.pop()
+  console.log(A)
+  A.length=0
+  console.log(A)
+console.log ("")
+
+  console.log ("Упражнение 5")
+  var colors = ["white", "blue", "yellow"]
+  console.log (colors.join(", "))
+console.log ("")
+
+  console.log ("Упражнение 6")
+  var colors = ["white","blue","yellow"]
+  var numbers = [1,2,3]
+  colors.concat(numbers)
+  console.log(colors)
+  colorNumber = colors.concat(numbers)
+  console.log(colorNumber)
+  colorNumber.length=0
+  console.log(colorNumber)
+console.log ("")
+
+  console.log ("Упражнение 7")
+  console.log ("Для массива var arr = [1,2,3,4,5,6] правильны следующие ответы")
+  console.log ("arr.slice(1,4): [2,3,4] или [2,3,4,5] → [2,3,4]")
+  console.log ("arr.slice(3,4): [4,5] или [4] → [4]")
+  console.log ("arr.slice(-2): [4,5] или [5,6] → [5,6]")
+  console.log ("arr.slice(arr.length-2): [5] или [5,6] → [5,6]")
+  console.log ("arr.slice(-3,-1): [4,5] или [5,6] → [4,5]")
+  console.log ("arr.slice(arr.length-3,arr.length-1): [3,4] или [4,5] → [4,5]")
+console.log ("")
+
+  console.log ("Упражнение 8")
+  var colors = ["white","yellow","blue"]
+  console.log (colors)
+  console.log (colors.reverse())
+  console.log (colors.sort())
+  console.log ("")
+
+    console.log ("Упражнение 8")
+  var arr = [1,2,3,4,5,6]
+  console.log (arr)
+  console.log (arr.splice(3,2)+" "+"Действия выполняются последовательно, второй аргумент начинает отсчет после действий первого.")
+  console.log (arr.splice(-5,2)+" "+"Последний элемент массива -1")
+  console.log (arr.splice(2,0,7)+" "+"Если 0 и 7 заменить 3 и 4 получим [3, 4, 5]")
+console.log ("")
+
+  console.log ("https://vertex-academy.com/tutorials/ru/dvumernye-massivy-v-java/")
+
+
+
+
+
+
+
+
+  </script></body>
+</html>
