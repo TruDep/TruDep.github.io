@@ -1,0 +1,98 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body><script>
+
+
+  console.log("Упражнение 1")
+  console.log("true+2"+"="+(true+2))
+  console.log("true-2"+"="+(true-2))
+  console.log("true+false"+"="+(true+false))
+  console.log("true-false"+"="+(true-false))
+  console.log("true+true"+"="+(true+true))
+  console.log("true-true"+"="+(true-true))
+  console.log("false-true"+"="+(false-true))
+  console.log("string+true"+"="+("string"+true))
+  console.log("string-true"+"="+("string"-true))
+  console.log("string+string"+"="+("string"+"string"))
+  console.log("string-string"+"="+("string"-"string"))
+console.log("")
+
+  console.log("Упражнение 2")
+  var A = [Math.round(Math.random()),Math.round(Math.random()),Math.round(Math.random())]
+  console.log(A)
+  console.log(A[0]*A[1]*A[2])
+  console.log(A[0]+A[1]+A[2])
+  console.log(A[2]%A[0]+A[1])
+  console.log(A=++A.length)
+console.log("")
+
+  console.log("Упражнение 3")
+  var a = +prompt("Введите сторону треугольника a");
+  var b = +prompt("Введите сторону треугольника b");
+  var c = +prompt("Введите сторону треугольника c");
+
+  if ( ( a > 0 ) && ( b > 0 ) && ( c > 0) && ( ( a + b > c ) || ( b + c > a ) || ( a + c > b ) ) ) {
+    var p = (a + b + c)*0.5; //Вычисление полупериметра
+    var s = Math.sqrt(p * (p - a) * (p - b) * (p - c)); //Вычисление площади
+    console.log("Полупериметр = " + p + "<br>");
+    console.log("Площадь = " + s);
+  } else {
+    console.log("Треугольника не существует");
+  }
+console.log("")
+
+  console.log("Упражнение 4")
+  console.log("var x=4, y  y=4*x++ Постфиксный инкремент")
+  var x=4
+  console.log(y=4*x++)
+  console.log(x, y)
+  var x=4
+  console.log("var x=4, y  y=4*++x Префиксный инкремент")
+  console.log(y=4*++x)
+  console.log(x, y)
+  console.log("Постфиксный инкремент – x++, значение операнда возвращается, а затем увеличивается на 1. Далее выполняется умножение и результаты выводятся в консоль. Суть: если х++, то выполняется действие с х, а после выполнения выполняется х+1. И наоборот с ++х.")
+  console.log("Соответственно:")
+  console.log("var x=4, y  y=4*x-- Постфиксный декремент")
+  var x=4
+  console.log(y=4*x--)
+  console.log(x, y)
+  var x=4
+  console.log("var x=4, y  y=4*--x Префиксный декремент")
+  console.log(y=4*--x)
+  console.log(x, y)
+console.log("")
+
+  console.log("Упражнение 5")
+  console.log("1\) var a = 2; a *= 2 + 5")
+  var a = 2
+  console.log(a *= 2 + 5)
+  console.log("2\) var a=3, c = 2+ ++a; a=a+c")
+  var a=3, c = 2+ ++a
+  console.log(a=a+c)
+  console.log("3\) var a=3, c = 2+a++; a=a+c")
+  var a=3, c = 2+a++
+  console.log(a=a+c)
+
+console.log("")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
