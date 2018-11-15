@@ -1,180 +1,47 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>lab4</title>
-    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="images/A.ico">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ArturA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+					<header id="header">
+						<h1>Alexxander1</h1>
+                        <p>ЛАБОРАТОРНАЯ РАБОТА №4</p>
+                        <p> нажмите f12 --> console</p>
+                        <p>По дисциплине:	Информатика и программирование</p>
+                        <p>Тема занятия:		Методы и свойства объекта Array (массив)</p>
+                        <p>Цель занятия: 	изучить основные приемы работы с массивами в JavaScript </p>
+                        <h4>Работу выполнил Аблаев Артур</h4>
+                        <!--<p style="color:#000000">Количество часов:	2</p>
+                        <p>Работу выполнил: Аблаев Артур </p>-->
+						<nav>
+							<ul>
+								<li><a href="https://vk.com/alexwwaiting" class="icon fa-vk"><span class="label">Vk</span></a></li>
+								<li><a href="https://github.com/alexxander1" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbFcrqjWPdZwLNZGxbNHlwgLVkDQDcTRScKglwWCGGJnMcJWHrBLSNWDNrpKCtDXFBjRQf" class="icon fa-envelope-o"><span class="label">Gmail</span></a></li>
+							</ul>
+						</nav>
+					</header>
 
-    <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <!-- Flexslider  -->
-    <link rel="stylesheet" href="css/flexslider.css">
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Untitled. Design: <a href="https://github.com/TruDep">TruDep</a>.</span>
+					</footer>
 
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="css/style.css">
+			</div>
+		</div>
+		<script src="scripts/lab4.js"></script>
+		<script src="scripts/maket.js"></script>
 
-    <!-- Modernizr JS -->
-    <!--<script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-    <div class="row animate-box">
-      <p><a class="btn btn-primary btn-lg btn-learn" href="https://trudep.github.io/labwork/index.html#Ablaev_A">Назад</a></p>
-
-      <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-
-        <h2><b>ЛАБОРАТОРНАЯ РАБОТА №4</b></h2>
-        <h3>нажмите f12 --> console </h3>
-        <p>По дисциплине:	Информатика и программирование</p>
-        <p>Тема занятия:		Методы и свойства объекта Array (массив)</p>
-        <p>Цель занятия: 	изучить основные приемы работы с массивами в JavaScript </p>
-        <p>Количество часов:	2</p>
-        <p>Работу выполнил: Аблаев Артур </p>
-      </div>
-    </div>
-    <div class="row copyright">
-        <div class="col-md-12 text-center">
-            <p>
-                <small class="block">&copy; 2018 Ablaev.A</small>
-                <small class="block">Designed by <a href="https://vk.com/alexwwaiting" target="_blank">Ablaev A(Alexxander1).<a href="https://trudep.github.io/" target="_blank"> The developer TruDep</a>
-            </p>
-            <p>
-
-            </p>
-        </div>
-    </div>
-</head>
-<body>
-    <script>
-        //1-е
-        console.log('1 задание')
-        console.log('_____________________________________')
-        var Numbers = [0, 1, 2, 3, 4]
-        console.log("var Numbers = [0, 1, 2, 3, 4]")
-        console.log("Значение 2 элемента = " + Numbers[1])
-        console.log("Значение предпоследнего элемента = " + Numbers[Numbers.length-1])
-        console.log("Размер массива = " + Numbers.length)
-        console.log('_____________________________________')
-                  //2-е
-        console.log('2 задание')
-        console.log('_____________________________________')
-        var Letters = ["Samsung", "Xiaomi", "MiBand", "Asus", "Redmi_4X"];
-        console.log("var Letters = ['Samsung', 'Xiaomi', 'MiBand', 'Asus', 'Redmi_4X']");
-
-
-        [Letters[0], Letters[2]] = [Letters[2], Letters[0]];
-
-        console.log(Letters);
-        console.log('_____________________________________')
-        //3-е
-        console.log('3 задание')
-        console.log('_____________________________________')
-        x1 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
-        x2 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
-        x3 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
-        var A = [x1, x2, x3]
-
-        console.log(A);
-
-        console.log('_____________________________________')
-        //4-е
-        console.log('4 задание')
-        console.log('_____________________________________')
-        x1 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
-        x2 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
-        x3 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
-        var A = [x1, x2, x3]
-        for (var i = 0; i < A.length; i++)
-        {
-            console.log("Значение " + i + " элемента = " + A[i])
-        }
-        A.unshift(100);
-        A.push(100);
-        console.log('_____________________________________')
-        for (var i = 0; i < A.length; i++)
-        {
-            console.log("Значение " + i + " элемента = " + A[i])
-        }
-        console.log('_____________________________________')
-        A.pop()
-        A.shift()
-        for (var i = 0; i < A.length; i++)
-        {
-            console.log("Значение " + i + " элемента = " + A[i])
-        }
-        A.length = 0
-        console.log('_____________________________________')
-        console.log(A)
-        console.log('_____________________________________')
-        //5-е
-        console.log('5 задание')
-        console.log('_____________________________________')
-        var colors = ["white", "blue", "yellow"]
-        console.log(colors.join(' или '))
-        console.log(colors.join(','))
-        console.log(colors.join(':'))
-        console.log('_____________________________________')
-        //6-e
-        console.log('6 задание')
-        console.log('_____________________________________')
-        var colors = ["white", "blue", "yellow"]
-        var numbers = [1, 2, 3]
-        var colorNumber  = colors.concat(numbers)
-        console.log();
-        console.log(colors)
-        console.log('_____________________________________')
-        console.log(colorNumber)
-        colors.length = 0;
-
-        console.log('_____________________________________')
-        //7-e
-        console.log('7 задание')
-        console.log('_____________________________________')
-        var arr = [1, 2, 3, 4, 5, 6]
-        console.log("var arr = [1, 2, 3, 4, 5, 6]")
-        console.log("arr.slice(1)   ////: " + arr.slice(1))
-        console.log("arr.slice(1,4)   ////: " + arr.slice(1,4))
-        console.log("arr.slice(3,4)   ////: " + arr.slice(3,4))
-        console.log("arr.slice(-2)   ////: " + arr.slice(-2))
-        console.log("arr.slice(arr.length - 2)   ////: " + arr.slice(arr.length - 2))
-        console.log("arr.slice(-3,-1)   ////: " + arr.slice(-3,-1))
-        console.log("arr.slice(arr.length - 3, arr.length - 1)   ////: " + arr.slice(arr.length - 3, arr.length - 1))
-        console.log('_____________________________________')
-        //8-e
-        console.log('8 задание')
-        console.log('_____________________________________')
-        var colors = ["white", "yellow", "blue"]
-        console.log(colors.reverse())
-        console.log(colors.sort())
-        console.log('_____________________________________')
-        //9-e
-        console.log('9 задание')
-        console.log('_____________________________________')
-        var arr = [1, 2, 3, 4, 5, 6]
-        console.log("var arr = [1, 2, 3, 4, 5, 6] ")
-        console.log("Удаленные элементы: " + arr.splice(3, 2))
-        console.log("Оставшиеся элементы: " + arr)
-        console.log("Удаленные элементы: " + arr.splice(-5, 2))
-        console.log("Оставшиеся элементы: " + arr)
-        console.log("Удаленные элементы: " + arr.splice(2, 0, 7))
-        console.log("Оставшиеся элементы: " + arr)
-        console.log('_____________________________________')
-
-
-    </script>
-</body>
+		</script>
+	</body>
 </html>
