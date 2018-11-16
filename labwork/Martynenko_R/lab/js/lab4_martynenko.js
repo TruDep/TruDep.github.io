@@ -71,7 +71,8 @@ console.log('6 задание')
 console.log('_____________________________________')
 var colors = ["white", "blue", "yellow"]
 var numbers = [1, 2, 3]
-var colorNumber  = colors.concat(numbers)
+var colorNumber = colors.concat(numbers)
+colors.length = 0;
 console.log(colors)
 console.log('_____________________________________')
 console.log(colorNumber)
