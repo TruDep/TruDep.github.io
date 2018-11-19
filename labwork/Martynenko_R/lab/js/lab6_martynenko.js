@@ -88,8 +88,8 @@ function func() {
     console.log('Возраст папы: ' + ageFa)
     console.log('Возраст мамы: ' + ageMa)
 
-    if (ageFa > ageMa) { console.log('Мама старше папы'); }
-    else { console.log('Папа старше мамы'); }
+    if (ageFa > ageMa) { console.log('Папа старше мамы'); }
+    else { console.log('Мама старше папы'); }
 
     console.log('_____________________________________')
 
@@ -103,7 +103,7 @@ function func() {
     console.log('Возраст папы: ' + ageFa)
     console.log('Возраст мамы: ' + ageMa)
 
-    if (ageFa = ageMa) { console.log('Мои родители - ровесники'); }
+    if (ageFa == ageMa) { console.log('Мои родители - ровесники'); }
     else {
         if (ageFa > ageMa) { console.log('Мама старше папы'); }
         else { console.log('Папа старше мамы'); }
