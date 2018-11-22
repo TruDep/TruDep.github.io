@@ -82,8 +82,8 @@ function func() {
     console.log('5 задание')
     console.log('_____________________________________')
     alert('(5 задание) Нахождение старшего родителя');
-    var ageFa = prompt('Введите возраст папы: ')
-    var ageMa = prompt('Введите возраст мамы: ')
+    var ageFa = +prompt('Введите возраст папы: ')
+    var ageMa = +prompt('Введите возраст мамы: ')
 
     console.log('Возраст папы: ' + ageFa)
     console.log('Возраст мамы: ' + ageMa)
@@ -97,16 +97,16 @@ function func() {
     console.log('6 задание')
     console.log('_____________________________________')
     alert('(6 задание) Нахождение старшего родителя');
-    var ageFa = prompt('Введите возраст папы: ')
-    var ageMa = prompt('Введите возраст мамы: ')
+    var ageFa = +prompt('Введите возраст папы: ')
+    var ageMa = +prompt('Введите возраст мамы: ')
 
     console.log('Возраст папы: ' + ageFa)
     console.log('Возраст мамы: ' + ageMa)
 
     if (ageFa == ageMa) { console.log('Мои родители - ровесники'); }
     else {
-        if (ageFa > ageMa) { console.log('Мама старше папы'); }
-        else { console.log('Папа старше мамы'); }
+        if (ageFa > ageMa) { console.log('Папа старше мамы'); }
+        else { console.log('Мама старше папы'); }
     }
 
 
