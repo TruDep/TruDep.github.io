@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>calc</title>
+	<style>.calculator {
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    margin: 100px auto 0;
+    text-align: center;
+    background-color: yellowgreen;
+    box-shadow: 0 0 30px grey;
+    border-radius: 4px;
+}
+
+.calculator__form {
+    height: 100%;
+    padding: 20px;
+}
+
+.calculator__row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator__display {
+    margin: 0 0 20px;
+    width: 100%;
+    border: 1px solid darkslateblue;
+    padding: 4px 2px;
+    text-align: right;
+    font: 700 16px/1 Arial, sans-serif;
+    color: darkslateblue;
+    background-color: whitesmoke;
+}
+
+.calculator__key {
+    width: 41px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    transition: all .2s;
+    text-transform: uppercase;
+}
+
+.calculator__key--equal {
+    width: 98px;
+}
+
+.calculator__key:hover {
+    background-color: yellow;
+    font-weight: 700;
+}
+
+.calculator__key::-moz-focus-inner {
+    border: none
+}
+</style>
+</head>
+<body>
+	<!-- CALCULATOR -->
+<div class="calculator">
+    <!-- CALCULATOR FORM -->
+    <form class="calculator__form">
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <input class="calculator__display" id="display" type="text" disabled />
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="c" class="calculator__key calculator__clear"></button>
+            <button type="button" value="<--" class="calculator__key calculator__backspace"></button>
+            <button type="button" value="^3" class="calculator__key calculator__power"></button>
+            <button type="button" value="+" class="calculator__key calculator__button"></button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="9" class="calculator__key calculator__button"></button>
+            <button type="button" value="8" class="calculator__key calculator__button"></button>
+            <button type="button" value="7" class="calculator__key calculator__button"></button>
+            <button type="button" value="-" class="calculator__key calculator__button"></button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="6" class="calculator__key calculator__button"></button>
+            <button type="button" value="5" class="calculator__key calculator__button"></button>
+            <button type="button" value="4" class="calculator__key calculator__button"></button>
+            <button type="button" value="*" class="calculator__key calculator__button"></button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="3" class="calculator__key calculator__button"></button>
+            <button type="button" value="2" class="calculator__key calculator__button"></button>
+            <button type="button" value="1" class="calculator__key calculator__button"></button>
+            <button type="button" value="/" class="calculator__key calculator__button"></button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="0" class="calculator__key calculator__button"></button>
+            <button type="button" value="." class="calculator__key calculator__button"></button>
+            <button type="button" value="=" class="calculator__key calculator__key--equal"></button>
+        </div>
+    </form>
+</div>
+<script>
+ (document).ready(function () {
+
+    // VARIABLES
+    var calc =  ('.calculator');
+    var calcDisplay = calc.find('.calculator__display');
+    var calcKeys = calc.find('.calculator__key');
+    var calcButton = calc.find('.calculator__button');
+    var calcClear = calc.find('.calculator__clear');
+    var calcEqual = calc.find('.calculator__key--equal');
+    var calcPower = calc.find('.calculator__power');
+    var calcSpace = calc.find('.calculator__backspace');
+
+    // INIT CALC KEYS
+    calcKeys.each(function () {
+        var current =  (this).attr('value');
+         (this).text(current);
+    });
+
+    // ADD NUMBERS TO INPUT
+    calcButton.on('click', function () {
+        calcDisplay.val( calcDisplay.val() +  (this).attr('value') );
+    });
+
+    // CLEAR INPUT
+    calcClear.on('click', function () {
+        calcDisplay.val('');
+    });
+
+    // SHOW RESULT
+    calcEqual.on('click', function () {
+        calcDisplay.val( eval( calcDisplay.val() ) );
+    });
+
+    // POWER BUTTON
+    calcPower.on('click', function () {
+        calcDisplay.val( Math.pow( calcDisplay.val(), 3 ) );
+    });
+
+    // BACKSPACE BUTTON
+    calcSpace.on('click', function () { // http://www.w3schools.com/jsref/jsref_substring.asp
+        calcDisplay.val( calcDisplay.val().substring(0, calcDisplay.val().length-1) );
+    });
+
+});
+</script>
+</body>
+</html>
