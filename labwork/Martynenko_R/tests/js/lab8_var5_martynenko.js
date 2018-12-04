@@ -17,13 +17,22 @@ function func() {
 
     function myrandString(length) {
         var A = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-        var t =  Math.floor(Math.random() * (max - min + 1)) + min;
+        var B = [], t = '';
         for (var i = 0; i < length; i++) {
-           
+            t = Math.floor(Math.random() * (A.length));
+            B.push(A[t]);
         }
-        
+        return B.join('');
+    }
+
+    function myrandmassString(masleng,length) {
+        var A = [];
+        for (var i = 0; i < masleng; i++) {
+            A[i] = myrandString(length);
+        }
         return A;
     }
+
     ////###########################
 
     var letters = [];
@@ -33,8 +42,8 @@ function func() {
     B = myrandmass(myrandom(2,7), -5, 5);
 
     console.log('Случайные массивы:');
-    console.log(A);
-    console.log(B);
+    console.log(myrandString(15));
+    console.log(myrandString(20));
 
     if (0 != Math.min.apply(null, A)) {
         console.log('Последний массива A[A.length - 1] = ' + A[A.length - 1]);
