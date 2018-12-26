@@ -36,6 +36,10 @@ function func() {
         console.log('Число:' + a)
     }
 
+    //for (var i = 100; i > 0; i-=20) {
+    //    console.log('Число:' + a)
+    //}
+
     console.log('_____________________________________')
     ////3  #######################
     console.log('3 задание')
@@ -55,13 +59,13 @@ function func() {
     console.log('_____________________________________')
 
     var A = [];
+    A = myrandmass(5, -10, 10)
     console.log('Прямой порядок:');
-    for (var i = 0; i < 5; i++) {
-        A[i] = i * i;
+    for (var i = 0; i < A.length; i++) {
         console.log(A[i]);
     }
     console.log('Обратный порядок:');
-    for (var i = 4; i > -1; i--) {
+    for (var i = A.length-1; i > -1; i--) {
         console.log(A[i]);
     }
 
@@ -164,7 +168,6 @@ function func() {
     var i1 = 0; i2 = 0, X = [], Y = [];
     console.log(A);
 
-
     for (var i = 0; i < A.length; i++) {
         if (A[i] > 0) { X[i1] = A[i]; i1++; }
         if (A[i] < 0) { Y[i2] = A[i]; i2++; }
@@ -173,8 +176,7 @@ function func() {
 
     console.log('Положительный массив: ' + X);
     console.log('Отрицательный массив: ' + Y);
-
-
+    
 
     console.log('_____________________________________')
 
@@ -209,10 +211,34 @@ function func() {
     var A = myrandmass(L, -100, 100);
     console.log(A);
 
-    console.log('Минимальное число массива: ');
-    console.log(Math.max.apply(null, A));
+
     console.log('Максимальное число массива: ');
+    console.log(Math.max.apply(null, A));
+    console.log('Минимальное число массива: ');
     console.log(Math.min.apply(null, A));
+
+
+    /////////////
+    var A = myrandmass(L, -100, 100);
+    var max = -Infinity, min = Infinity
+    console.log(A);
+
+    for (var i = 0; i < A.length; i++) {
+        if (min > A[i] && A[i] < 0) { min = A[i]; }
+    }
+    console.log('Минимальное число массива: ' + min);
+    for (var i = 0; i < A.length; i++) {
+        if (max < A[i] && A[i] > 0) { max = A[i]; }
+
+        if (max < A[i]) {
+            if (A[i] > 0) {
+                max = A[i];
+            }
+        }
+    }
+    console.log('Максимальное число массива: ' + max);
+    ////////////////
+
 
 
     console.log('_____________________________________')

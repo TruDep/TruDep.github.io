@@ -28,6 +28,7 @@ function func() {
             }
             else {
                 calc[3] = calc[0] / calc[1];
+                console.log(calc[0] + ' ' + calc[2] + ' ' + calc[1] + ' = ' + calc[3]);
                 alert('result= ' + calc[3]);
             }
         }

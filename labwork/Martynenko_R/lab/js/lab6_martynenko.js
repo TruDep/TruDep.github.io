@@ -197,6 +197,52 @@ function func() {
 
     var slovo = prompt('Введите слово: ');
     console.log(slovo);
+    console.log('Через if')
+
+    //Через if
+    var aa = 0, ee = 0, ii = 0, oo = 0;
+
+    for (var i = 0; i < slovo.length; i++) {
+        if (slovo[i] == 'a') { aa++ }
+        if (slovo[i] == 'e') { ee++ }
+        if (slovo[i] == 'i') { ii++ }
+        if (slovo[i] == 'o') { oo++ }
+    }
+
+    console.log('Содержание в слове буквы "a": ' + aa);
+    console.log('Содержание в слове буквы "e": ' + ee);
+    console.log('Содержание в слове буквы "i": ' + ii);
+    console.log('Содержание в слове буквы "o": ' + oo);
+    ////////////////////////////////
+
+    console.log('Через switch')
+    //Через switch
+    var aa = 0, ee = 0, ii = 0, oo = 0;
+
+    for (var i = 0; i < slovo.length; i++) {
+        switch (slovo[i]) {
+            case 'a':
+                aa++
+                break
+            case 'e':
+                ee++
+                break
+            case 'i':
+                ii++
+                break
+            case 'o':
+                oo++
+                break
+        }
+    }
+
+    console.log('Содержание в слове буквы "a": ' + aa);
+    console.log('Содержание в слове буквы "e": ' + ee);
+    console.log('Содержание в слове буквы "i": ' + ii);
+    console.log('Содержание в слове буквы "o": ' + oo);
+    ////////////////////////////////
+    console.log('Через split')
+    //Через split
     //Зачем мучитсья, если можно использовать split
     var a = slovo.split("a").length - 1;
     var e = slovo.split("e").length - 1;
@@ -207,6 +253,9 @@ function func() {
     console.log('Содержание в слове буквы "e": ' + e);
     console.log('Содержание в слове буквы "i": ' + i);
     console.log('Содержание в слове буквы "o": ' + o);
+
+
+
 
     console.log('_____________________________________')
 
