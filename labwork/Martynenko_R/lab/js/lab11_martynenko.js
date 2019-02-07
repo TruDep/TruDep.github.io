@@ -47,11 +47,11 @@ function averageArr() {
     var arr = [2, 4, 6, 8, 10];
     var A = 0;
 
-    for (var i = 0; i < arr.length - 1; i++) { A += arr[i];}
+    for (var i = 0; i < arr.length; i++) { A += arr[i];}
 
-    console.log('Среднее арифметическое = ' + (A / (arr.length - 1)))
+    console.log('Среднее арифметическое = ' + (A / (arr.length)))
 
-    alert(A / (arr.length - 1));
+    alert(A / (arr.length));
     console.log('_____________________________________')
 }
 
@@ -98,4 +98,10 @@ function maxArr() {
     alert('Максимальное значение массива (от -10 до 10) = ' + max);
 
     console.log('_____________________________________')
+}
+
+
+function Sum2(a,b) {
+    
+    alert(a + b)
 }

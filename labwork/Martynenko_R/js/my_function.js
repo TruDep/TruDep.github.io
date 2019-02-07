@@ -26,8 +26,7 @@ function getPrime(num) {
 
 //// Выдаёт случайное число между min и max
 function Random(min, max) {
-    var x = Math.floor(Math.random() * (max - min + 1)) + min;
-    return x;
+    return x = Math.floor(Math.random() * (max - min + 1)) + min;
 }
 ////###########################
 

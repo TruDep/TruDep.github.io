@@ -1,0 +1,96 @@
+*{
+    font-family: Areal;
+}
+.b-container{
+    width:200px;
+    height:150px;
+    background-color: #ccc;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+    color: #fff;
+}
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    
+    
+}
+.b-popup .b-popup-content{
+    max-width: 500px;
+    height: 700px;
+    min-height:100%;
+    z-index: 100;
+    padding: 20px; /* Поля вокруг текста */
+    margin: auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+
+	/* Высота необходимого блока */
+   
+	/* Абсолютное позиционирование блока */
+    position: absolute;
+	/* Отрицательный отступ от верхнего края страницы, это половина ширины блока со знаком минус */
+    margin-top: -150px;
+	/* Отрицательный отступ от левого края страницы, это половина высоты блока со знаком минус */
+    margin-left: -250px;
+	/* Отступ в процентах от верхнего края экрана */
+    top: 50%;
+	/* Отступ в процентах от левого края экрана */
+    left: 50%;
+
+    position: absolute;;
+}
+
+
+
+/* Запрет выделения текста */
+.unselectable { 
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+  }
+
+
+.prer {
+    -webkit-overflow-scrolling: touch;
+    background: #f8f8f8;
+    border-radius: 6px;
+    border: solid 1px #e5e5e5;
+    font-family: monospace;
+    font-size: 0.9em;
+    line-height: 1.75em;
+    margin: 0 0 2em 0;
+    overflow-x: auto;
+    padding: 1em 1.5em;
+}
+
+
+.input_vvod {
+    border-radius: 6px;
+    border: solid 1px #e5e5e5;
+    font-family: monospace;
+}
+
+.input_vvod2 {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    border: solid 1px #e5e5e5;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+}
