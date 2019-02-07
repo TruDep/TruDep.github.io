@@ -82,14 +82,14 @@ function func() {
     console.log('5 задание')
     console.log('_____________________________________')
     alert('(5 задание) Нахождение старшего родителя');
-    var ageFa = +prompt('Введите возраст папы: ')
-    var ageMa = +prompt('Введите возраст мамы: ')
+    var ageMa = +prompt('Введите возраст папы: ')
+    var ageFa = +prompt('Введите возраст мамы: ')
 
-    console.log('Возраст папы: ' + ageFa)
-    console.log('Возраст мамы: ' + ageMa)
+    console.log('Возраст папы: ' + ageMa)
+    console.log('Возраст мамы: ' + ageFa)
 
-    if (ageFa > ageMa) { console.log('Папа старше мамы'); }
-    else { console.log('Мама старше папы'); }
+    if (ageFa < ageMa) { console.log('Папа старше мамы'); }
+    if (ageFa > ageMa) { console.log('Мама старше папы'); }
 
     console.log('_____________________________________')
 
