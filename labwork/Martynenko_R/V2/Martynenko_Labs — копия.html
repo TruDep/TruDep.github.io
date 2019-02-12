@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Martynenko Labs</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/x-icon" class="js-site-favicon" href="images/TD.ico">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="Rlb2/js/my.css" />
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+
+
+		<!-- \\PopUp -->
+		<div class="b-popup" id="popup1" style="display: none;">
+
+			<div class="b-popup-content">
+				<div class="box">
+					<h3>Выберите семестр:</h3>
+					<select id="semester2" onchange="upd_lab_menu()">
+						<option value="1">1 Курс I Семестр</option>
+						<option value="2">1 Курс II Семестр</option>
+						<option value="3">2 Курс I Семестр</option>
+						<option value="4">2 Курс II Семестр</option>
+						<option value="5">3 Курс I Семестр</option>
+						<option value="6">3 Курс II Семестр</option>
+						<option value="7">4 Курс I Семестр</option>
+						<option value="8">4 Курс II Семестр</option>
+					</select>
+
+					<h3>Выберите лабораторную работу:</h3>
+					<select id="lab">
+						<div id="lab2">
+							<option value="1">Lab 1</option>
+							<option value="2">Lab 2</option>
+							<option value="3">Lab 3</option>
+							<option value="4">Lab 4</option>
+							<option value="5">Lab 5</option>
+							<option value="6">Lab 6</option>
+							<option value="7">Lab 7</option>
+							<option value="8">Lab 8</option>
+						</div>
+					</select>
+
+					<div style="text-align: center; margin-top: 20px;">
+						<input type="button" value="Применить" onclick="PopUpHide()">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- PopUp// -->
+
+
+
+
+		<!-- Main -->
+		<section id="main" class="container">
+			<header style=" z-index: 2;">
+				<div id="Sm_Lb">
+					<h2>Значечки)</h2>
+				</div>
+
+
+				<p>Работу выполнил: Мартыненко Роман</p>
+			</header>
+			
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+
+				<li><a href="#" class="icon fa-music"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-search"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-envelope-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-heart"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-star"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-star-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-user"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-film"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-th-large"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-th"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-th-list"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-check"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-remove"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-close"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-times"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-search-plus"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-search-minus"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-power-off"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-signal"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-gear"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-cog"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-trash"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-home"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-file-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-clock-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-road"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-download"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-arrow-circle-o-down"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-arrow-circle-o-up"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-inbox"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-play-circle-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-rotate-right"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-repeat"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-refresh"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-list-alt"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-lock"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-flag"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-headphones"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-volume-off"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-volume-down"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-volume-up"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-qrcode"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-barcode"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-tag"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-tags"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-book"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-bookmark"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-print"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-camera"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-font"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-bold"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-italic"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-text-height"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-text-width"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-align-left"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-align-center"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-align-right"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-align-justify"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-list"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-dedent"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-outdent"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-indent"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-video-camera"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-photo"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-image"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-picture-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-pencil"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-map-marker"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-adjust"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-tint"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-tint"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-pencil-square-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-share-square-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-check-square-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-arrows"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-step-backward"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-fast-backward"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-backward"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-play"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-pause"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-stop"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-forward"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-fast-forward"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-step-forward"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-eject"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-chevron-left"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-chevron-right"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-plus-circle"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-minus-circle"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-times-circle"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-check-circle"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-question-circle"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-info-circle"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-crosshairs"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-times-circle-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-check-circle-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-ban"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-arrow-left"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-arrow-right"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-arrow-up"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-arrow-down"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-mail-forward"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-share"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-expand"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-compress"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-plus"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-minus"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-asterisk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-exclamation-circle"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-gift"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-leaf"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-fire"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-eye"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-eye-slash"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-warning"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-exclamation-triangle"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-plane"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-calendar"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-random"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-comment"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-magnet"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-chevron-up"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-chevron-down"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-retweet"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-shopping-cart"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-folder"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-folder-open"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-arrows-v"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-arrows-h"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-bar-chart-o"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-bar-chart"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-twitter-square"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-facebook-square"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-camera-retro"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-key"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-gears"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-cogs"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-comments"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-thumbs-o-up"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-thumbs-o-down"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-star-half"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="#" class="icon fa-vk"><span class="label"></span></a></li>
+				<li><a href="https://github.com/TruDep" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+				
+				<li><a href="https://www.youtube.com/channel/UCsQTOxXRAjcLkJz7mTyO6QA/" class="icon fa-youtube-play" target="_blank"><span class="label">Google+</span></a></li>
+
+
+
+
+			</ul>
+				Design by <a href="https://github.com/TruDep" target="_blank" style="color: #F95959" >TruDep</a>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
