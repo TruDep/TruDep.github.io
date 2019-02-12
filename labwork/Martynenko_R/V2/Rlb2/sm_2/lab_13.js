@@ -59,6 +59,7 @@ function upd_lab_13_code(Lab_ex_N){
                  </table>\
 							<input type="button" value="Запустить код!" onclick="lab_13_ex_6()">'
     }
+    
 
 
     document.getElementById("id_labs_in").innerHTML = str3;
