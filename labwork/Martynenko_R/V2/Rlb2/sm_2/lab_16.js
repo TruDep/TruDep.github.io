@@ -320,8 +320,8 @@ function lab_16_ex_11()
     N = B.length;
     C = '[' + B.join('] [') + ']'
 
-    console.log(C)
-    console.log(N)
+    // console.log(C)
+    // console.log(N)
 
     
 
