@@ -224,6 +224,7 @@ function upd_lab_ex(){
                     <option value="3">Задание 3</option>\
                     <option value="4">Задание 4</option>\
                     <option value="5">Задание 5</option>\
+                    <option value="6">Дополнительное задание 1</option>\
 					</select>'
     }
 
