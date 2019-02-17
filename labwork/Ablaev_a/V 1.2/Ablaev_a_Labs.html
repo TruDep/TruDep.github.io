@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Alexxander1</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/x-icon" class="js-site-favicon" href="images/TD.ico">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="Alb2/js/my.css" />
+	<link rel="icon" type="image/x-icon" class="js-site-favicon" href="../images/A.ico">
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+
+
+
+		<div class="b-popup" id="popup1" style="display: none;">
+
+			<div class="b-popup-content">
+				<div class="box">
+					<h3>Выберите семестр:</h3>
+					<select id="semester2" onchange="upd_lab_menu()">
+						<option value="1">1 Курс I Семестр</option>
+						<option value="2">1 Курс II Семестр</option>
+						<option value="3">2 Курс I Семестр</option>
+						<option value="4">2 Курс II Семестр</option>
+						<option value="5">3 Курс I Семестр</option>
+						<option value="6">3 Курс II Семестр</option>
+						<option value="7">4 Курс I Семестр</option>
+						<option value="8">4 Курс II Семестр</option>
+					</select>
+
+					<h3>Выберите лабораторную работу:</h3>
+					<select id="lab">
+						<div id="lab2">
+							<option value="1">Lab 1</option>
+							<option value="2">Lab 2</option>
+							<option value="3">Lab 3</option>
+							<option value="4">Lab 4</option>
+							<option value="5">Lab 5</option>
+							<option value="6">Lab 6</option>
+							<option value="7">Lab 7</option>
+							<option value="8">Lab 8</option>
+						</div>
+					</select>
+
+					<div style="text-align: center; margin-top: 20px;">
+						<input type="button" value="Применить" onclick="PopUpHide()">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- PopUp// -->
+
+
+		<!-- Header -->
+		<!-- <header id="header">
+			<h1><a href="index.html">Alpha</a> by HTML5 UP</h1>
+			<nav id="nav">
+				<ul>
+					<li><a>Семестр:</a></li>
+
+					<li>
+						<a href="#" class="icon fa-angle-down">Layouts</a>
+						<ul>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="elements.html">Elements</a></li>
+							<li>
+								<a href="#">Submenu</a>
+								<ul>
+									<li><a href="#">Option One</a></li>
+									<li><a href="#">Option Two</a></li>
+									<li><a href="#">Option Three</a></li>
+									<li><a href="#">Option Four</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#" class="button">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header> -->
+
+		<!-- Main -->
+		<section id="main" class="container">
+			<header style=" z-index: 2;">
+				<div id="Sm_Lb">
+					<h2>СМ-1_ЛБ-1</h2>
+				</div>
+
+
+				<p>Работу выполнил: Аблаев Артур</p>
+			</header>
+			<div class="box">
+				<!-- <input type="button" value="Выбор задания" onclick="PopUpShow()"> -->
+				<table class="table table-bordered table-condensed">
+					<tbody>
+						<tr>
+							<td>
+								<h3>Выбор задания</h3>
+							</td>
+							<td>
+								<select id="id_semester2" onchange="upd_lab_menu()">
+									<option value="1">1 Курс I Семестр</option>
+									<option value="2">1 Курс II Семестр</option>
+									<option value="3">2 Курс I Семестр</option>
+									<option value="4">2 Курс II Семестр</option>
+									<option value="5">3 Курс I Семестр</option>
+									<option value="6">3 Курс II Семестр</option>
+									<option value="7">4 Курс I Семестр</option>
+									<option value="8">4 Курс II Семестр</option>
+								</select>
+							</td>
+							<td>
+								<div id="lab2">
+									<select id="id_lab_menu" >
+										<option value="2">Lab 2</option>
+										<option value="3.1">Lab 3.1</option>
+										<option value="3.2">Lab 3.2</option>
+										<option value="4">Lab 4</option>
+										<option value="5">Lab 5</option>
+										<option value="6-7">Lab 6-7</option>
+										<option value="8-9">Lab 8-9</option>
+										<option value="10">Lab 10</option>
+									</select>
+								</div>
+
+							</td>
+							<td><input type="button" value="Применить" onclick="upd_Sm_Lb()"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="id_Lab_ex">
+					<select id="Lab_ex_menu" onchange="hy_ex()">
+						<option value="1">Задание 1</option>
+					</select>
+				</div>
+				<h4>
+					<div id="id_tema"><b2>Тема занятия: Методы Math</b2></div>
+				</h4>
+				<h4>
+					<div id="id_ccel"><b2>Цель занятия: подготовить окружение для написания первой программы JavaScript</b2></div>
+					
+				</h4>
+
+			</div>
+
+			<section class="box special features">
+				<div class="features-row">
+
+					<div id="labs_code">
+							<blockquote align="left" class="prer unselectable"><ol><li><font color="#006600">//возвращает&nbsp;арккосинус&nbsp;числа&nbsp;(в&nbsp;радианах)</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">acos</font><font color="#009900">&#40;</font><font color="#339933">-</font><font color="#CC0000">2</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;<font color="#006600">//&nbsp;NaN</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">acos</font><font color="#009900">&#40;</font><font color="#339933">-</font><font color="#CC0000">1</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;<font color="#006600">//&nbsp;3.141592653589793</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">acos</font><font color="#009900">&#40;</font><font color="#CC0000">0</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;1.5707963267948966</font></li><li>&nbsp;</li><li><font color="#006600">//возвращает&nbsp;арксинус&nbsp;числа&nbsp;(в&nbsp;радианах)</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">asin</font><font color="#009900">&#40;</font><font color="#339933">-</font><font color="#CC0000">1</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;<font color="#006600">//&nbsp;-1.5707963267948966&nbsp;(-pi/2)</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">asin</font><font color="#009900">&#40;</font><font color="#CC0000">0</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;0</font></li><li>&nbsp;</li><li><font color="#006600">//возвращает&nbsp;арктангенс&nbsp;числа&nbsp;(в&nbsp;радианах)</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">atan</font><font color="#009900">&#40;</font><font color="#CC0000">1</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;0.7853981633974483</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">atan</font><font color="#009900">&#40;</font><font color="#CC0000">0</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;0</font></li><li>&nbsp;</li><li><font color="#006600">//возвращает&nbsp;арктангенс&nbsp;от&nbsp;частного&nbsp;своих&nbsp;аргументов</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">atan2</font><font color="#009900">&#40;</font><font color="#CC0000">90</font><font color="#339933">,</font>&nbsp;<font color="#CC0000">15</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;1.4056476493802699</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">atan2</font><font color="#009900">&#40;</font><font color="#CC0000">15</font><font color="#339933">,</font>&nbsp;<font color="#CC0000">90</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;0.16514867741462683</font></li><li>&nbsp;</li><li><font color="#006600">//возвращает&nbsp;значение&nbsp;выражения&nbsp;e^x</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">exp</font><font color="#009900">&#40;</font><font color="#339933">-</font><font color="#CC0000">1</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;0.36787944117144233</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">exp</font><font color="#009900">&#40;</font><font color="#CC0000">0</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;<font color="#006600">//&nbsp;1</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">exp</font><font color="#009900">&#40;</font><font color="#CC0000">1</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;<font color="#006600">//&nbsp;2.718281828459045</font></li><li>&nbsp;</li><li><font color="#006600">//выводит&nbsp;минимальную&nbsp;переменную</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">min</font><font color="#009900">&#40;</font><font color="#CC0000">3</font><font color="#339933">,</font><font color="#CC0000">5</font><font color="#339933">,</font><font color="#CC0000">3</font><font color="#339933">,</font><font color="#CC0000">7</font><font color="#339933">,</font><font color="#CC0000">1</font><font color="#339933">,</font><font color="#CC0000">6</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#006600">//выведет&nbsp;минимальный&nbsp;(1)</font></li><li>&nbsp;</li><li><font color="#006600">//выведет&nbsp;случайное&nbsp;число&nbsp;от&nbsp;0&nbsp;до&nbsp;1</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">random</font><font color="#009900">&#40;</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font></li><li>&nbsp;</li><li><font color="#006600">//извлекает&nbsp;квадратный&nbsp;корень</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">sqrt</font><font color="#009900">&#40;</font><font color="#CC0000">9</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#006600">//выведет&nbsp;(3)</font></li><li>&nbsp;</li><li><font color="#006600">//Вычисляет&nbsp;логарифм</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">log</font><font color="#009900">&#40;</font><font color="#CC0000">1</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;<font color="#006600">//&nbsp;0</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">log</font><font color="#009900">&#40;</font><font color="#CC0000">10</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;2.302585092994046</font></li><li>&nbsp;</li><li><font color="#006600">//округление</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">round</font><font color="#009900">&#40;</font><font color="#CC0000">20.49</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#006600">//&nbsp;возвратит&nbsp;20</font></li><li>&nbsp;</li><li><font color="#006600">//округление&nbsp;в&nbsp;меньшую</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">floor</font><font color="#009900">&#40;</font><font color="#CC0000">45.95</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;&nbsp;45</font></li><li>&nbsp;</li><li><font color="#006600">//округление&nbsp;в&nbsp;большую</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">ceil</font><font color="#009900">&#40;</font>.95<font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;1</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">ceil</font><font color="#009900">&#40;</font><font color="#CC0000">4</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;4</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">ceil</font><font color="#009900">&#40;</font><font color="#CC0000">7.004</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;<font color="#006600">//&nbsp;8</font></li><li>&nbsp;</li><li><font color="#006600">//Вычисляет&nbsp;синус</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">sin</font><font color="#009900">&#40;</font><font color="#CC0000">0</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;0</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">sin</font><font color="#009900">&#40;</font><font color="#CC0000">1</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;0.8414709848078965</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">sin</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">PI</font>&nbsp;<font color="#339933">/</font>&nbsp;<font color="#CC0000">2</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;1</font></li><li>&nbsp;</li><li><font color="#006600">//вычисляет&nbsp;косинус</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">cos</font><font color="#009900">&#40;</font><font color="#CC0000">0</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;1</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">cos</font><font color="#009900">&#40;</font><font color="#CC0000">1</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;0.5403023058681398</font></li><li>&nbsp;</li><li><font color="#006600">//Вычисляет&nbsp;тангенс</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">tan</font><font color="#009900">&#40;</font><font color="#CC0000">1</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;1.5574077246549023</font></li><li>&nbsp;</li><li><font color="#006600">//возводит&nbsp;в&nbsp;степень&nbsp;число&nbsp;7</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">pow</font><font color="#009900">&#40;</font><font color="#CC0000">7</font><font color="#339933">,</font>&nbsp;<font color="#CC0000">2</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;49</font></li><li>&nbsp;</li><li><font color="#006600">//Выводит&nbsp;максимальное&nbsp;число</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">max</font><font color="#009900">&#40;</font><font color="#CC0000">10</font><font color="#339933">,</font>&nbsp;<font color="#CC0000">20</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;&nbsp;20</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">max</font><font color="#009900">&#40;</font><font color="#339933">-</font><font color="#CC0000">10</font><font color="#339933">,</font>&nbsp;<font color="#339933">-</font><font color="#CC0000">20</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;<font color="#006600">//&nbsp;-10</font></li><li>&nbsp;</li><li><font color="#006600">//модуль&nbsp;числа</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">abs</font><font color="#009900">&#40;</font><font color="#3366CC">&quot;-1&quot;</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;1</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">abs</font><font color="#009900">&#40;</font><font color="#339933">-</font><font color="#CC0000">2</font><font color="#009900">&#41;</font><font color="#009900">&#41;</font><font color="#339933">;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#006600">//&nbsp;2</font></li><li>&nbsp;</li><li><font color="#006600">//Свойства</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">LN10</font><font color="#009900">&#41;</font><font color="#006600">//2.302</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">SQRT2</font><font color="#009900">&#41;</font><font color="#006600">//1.414</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">SQRT12</font><font color="#009900">&#41;</font><font color="#006600">//0.707</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">PI</font><font color="#009900">&#41;</font><font color="#006600">//3.141592653589793</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">LOG10E</font><font color="#009900">&#41;</font><font color="#006600">//0.434</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">LOG2E</font><font color="#009900">&#41;</font><font color="#006600">//1.442</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">LN2</font><font color="#009900">&#41;</font><font color="#006600">//0.693</font></li><li>console.<font color="#660066">log</font><font color="#009900">&#40;</font><font>Math</font>.<font color="#660066">E</font><font color="#009900">&#41;</font><font color="#006600">//2.718</font></li></ol></blockquote>
+					</div>
+
+
+				</div>
+				<div class="features-row">
+					<section>
+						<h3>Поля ввода</h3>
+						<div id="id_labs_in">
+								<pre align="left">Warning: "В некоторых заданиях не будет поля ввода"</pre>
+							<!-- <table class="table table-bordered table-condensed">
+								<tbody>
+									<tr><td><h4><b2>Имя вкладчика</b2></h4></td>
+										<td><input type="text" value="Роман" class="input_vvod" id="id_lab_13_ex_6_name"></td></tr>
+									<tr><td><h4><b2>Размер вклада в руб</b2></h4></td>
+										<td><input type="number" value="5000" class="input_vvod" id="id_lab_13_ex_6_N"></td></tr>
+									<tr><td><h4><b2>срок (колличество месяцев)</b2></h4></td>
+										<td><input type="number" value="3" class="input_vvod" id="id_lab_13_ex_6_M"></td></tr>
+									</tbody>
+							</table>
+							<input type="button" value="Запустить код!" onclick="id_lab_5_ex_1()"> -->
+						</div>
+					</section>
+					<section>
+						<h3>Поле вывода</h3>
+
+						<div id="id_labs_out">
+							<pre align="left">Warning: "В некоторых заданиях не будет поля вывода"</pre>
+						</div>
+
+
+
+
+					</section>
+				</div>
+			</section>
+
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+
+				<li><a href="https://vk.com/alexwwaiting" class="icon fa-vk"><span class="label" target="_blank">VK</span></a></li>
+				<li><a href="https://github.com/TruDep" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+			</ul>
+				Design by <a href="https://github.com/TruDep" target="_blank" style="color: #F95959" >TruDep</a>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+	<script src="Alb2/js/my.js"></script>
+	<script src="Alb2/sm_1/lab_2.js"></script>
+	<script src="Alb2/sm_1/lab_3.1.js"></script>
+	<script src="Alb2/sm_1/lab_3.2.js"></script>
+	<script src="Alb2/sm_1/lab_4.js"></script>
+	<script src="Alb2/sm_1/lab_5.js"></script>
+	<script src="Alb2/sm_1/lab_6-7.js"></script>
+	<script src="Alb2/sm_1/lab_8-9.js"></script>
+	<script src="Alb2/sm_1/lab_10.js"></script>
+	<script src="Alb2/sm_2/lab_11.js"></script>
+	<script src="Alb2/sm_2/lab_12.js"></script>
+	<script src="Alb2/sm_2/lab_13.js"></script>
+	<script src="Alb2/sm_2/lab_14.js"></script>
+
+</body>
+
+</html>
