@@ -13,6 +13,7 @@ function Sum() {
     alert(A)
     console.log('_____________________________________')
 }
+console.log(Sum)
 //// 2 ########################
 //function twoPow() {
 //    console.log('2 задание')
@@ -32,6 +33,11 @@ function ex2(A)
     twoPow(A);
 }
 
+// var exe2 = ex2;
+// exe2(); вызволи через другую переменную
+
+// console.log(ex2)
+
 function twoPow(A) {
     console.log('2 задание')
     console.log('_____________________________________')
@@ -40,6 +46,18 @@ function twoPow(A) {
     alert(A * A)
     console.log('_____________________________________')
 }
+console.log(twoPow)
+
+// var f = function(A){
+//     console.log('2 задание')
+//     console.log('_____________________________________')
+   
+//     console.log(A + '^2 ' + ' = ' + (A * A))
+//     alert(A * A)
+//     console.log('_____________________________________')
+// }
+// f(A)
+
 //// 3 ########################
 function averageArr() {
     console.log('3 задание')
@@ -54,6 +72,7 @@ function averageArr() {
     alert(A / (arr.length));
     console.log('_____________________________________')
 }
+console.log(averageArr)
 
 //// 4 ########################
 function ex4() {
@@ -81,6 +100,7 @@ function ex4() {
     
     console.log('_____________________________________')
 }
+console.log(ex4)
 
 //// 5 ########################
 function maxArr() {
@@ -101,7 +121,60 @@ function maxArr() {
 }
 
 
+// maxArr = function(){return 0;}
+
+// maxArr();
+
+
+console.log(maxArr)
+
+
 function Sum2(a,b) {
     
     alert(a + b)
 }
+console.log(Sum2)
+
+
+function time(s_time,l_time,p_time)
+{
+    var s_hm = s_time.split(':'); //массив часов и минут
+    var l_hm = l_time.split(':'); //массив часов и минут
+    var p_hm = p_time.split(':'); //массив часов и минут
+
+    var T = [];
+
+    T[0] = +s_hm[0]
+    T[1] = +s_hm[1]
+
+    console.log(T[0] + ' : ' + T[1])
+
+    while(1)
+    {   
+        //console.log(T[0])
+        T[0] += +l_hm [0];
+        //console.log(T[0])
+        T[1] += +l_hm [1];
+
+        if(T[1] >= 60){T[0]++; T[1] -= 60}
+        //console.log(T[0])
+
+        console.log(T[0] + ' : ' + T[1])
+
+        T[0] += +p_hm[0];
+        //console.log(T[0])
+        T[1] += +p_hm[1];
+
+        //console.log(T[0])
+
+        if(T[1] >= 60){T[0]++; T[1] -= 60}
+
+
+    //console.log(T[0])
+        if(+T[0] >= 16){break;}
+
+    }
+
+}
+
+time("8:00","1:30","0:10")
