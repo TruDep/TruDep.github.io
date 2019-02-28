@@ -169,7 +169,7 @@ function lab_11_ex_6()
 
     str2 = '<blockquote class="prer unselectable"><ol><li>Расписание:</li>'
 
-    console.log(T[0] + ' : ' + T[1])
+    //console.log(T[0] + ' : ' + T[1])
 
     while(1)
     {   
@@ -185,7 +185,7 @@ function lab_11_ex_6()
 
         str2 += T[0] +':'+ ((T[1] < 10)?'0'+T[1]:T[1]) +'</li>'
 
-        console.log(T[0] + ' : ' + T[1])
+        //console.log(T[0] + ' : ' + T[1])
 
         if(para2 == 1 && i==1){T[1] += 20;}
             else{

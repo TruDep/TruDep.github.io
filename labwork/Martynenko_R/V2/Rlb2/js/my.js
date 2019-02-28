@@ -62,7 +62,8 @@ function upd_lab_menu(){
                     <option value="14">Lab 14</option>\
                     <option value="15">Lab 15</option>\
                     <option value="16">Lab 16</option>\
-                    <option value="17">Lab 17</option>\
+                    <option value="17.1">Lab 17.1</option>\
+                    <option value="17.2">Lab 17.2</option>\
                     <option value="18">Lab 18</option>\
                     <option value="19">Lab 19</option>\
                     <option value="20">Lab 20</option>\
@@ -290,6 +291,53 @@ function upd_lab_ex(){
 					</select>'
     }
 
+    if (lab_menu == "17.1")
+    {
+        var str =  '<select id="Lab_ex_menu" onchange="hy_ex()">\
+                    <option value="1">Задание 1</option>\
+                    <option value="2">Задание 2</option>\
+                    <option value="3">Задание 3</option>\
+                    <option value="4">Задание 4</option>\
+                    <option value="5">Задание 5</option>\
+					</select>'
+    }
+
+    if (lab_menu == "17.2")
+    {
+        var str =  '<select id="Lab_ex_menu" onchange="hy_ex()">\
+                    <option value="1">Задание 1</option>\
+                    <option value="2">Задание 2</option>\
+                    <option value="3">Задание 3</option>\
+                    <option value="4">Домашние задание 1</option>\
+					</select>'
+    }
+
+    if (lab_menu == 18)
+    {
+        var str =  '<select id="Lab_ex_menu" onchange="hy_ex()">\
+                    <option value="1">Задание 1.1</option>\
+                    <option value="2">Задание 1.2</option>\
+                    <option value="3">Задание 2</option>\
+					</select>'
+    }
+
+    if (lab_menu == 19)
+    {
+        var str =  '<select id="Lab_ex_menu" onchange="hy_ex()">\
+                    <option value="1">Задание 1</option>\
+                    <option value="2">Задание 2</option>\
+                    <option value="3">Задание 3</option>\
+					</select>'
+    }
+
+    if (lab_menu == 20)
+    {
+        var str =  '<select id="Lab_ex_menu" onchange="hy_ex()">\
+                    <option value="1">Задание 1</option>\
+                    <option value="2">Задание 2</option>\
+                    <option value="3">Задание 3</option>\
+					</select>'
+    }
 
     document.getElementById("id_Lab_ex").innerHTML = str;
     
@@ -335,6 +383,11 @@ function hy_ex()
         if(lab_menu == 14){upd_lab_14_code(Lab_ex_N);}
         if(lab_menu == 15){upd_lab_15_code(Lab_ex_N);}
         if(lab_menu == 16){upd_lab_16_code(Lab_ex_N);}
+        if(lab_menu == "17.1"){upd_lab_17_1_code(Lab_ex_N);}
+        if(lab_menu == "17.2"){upd_lab_17_2_code(Lab_ex_N);}
+        if(lab_menu == 18){upd_lab_18_code(Lab_ex_N);}
+        if(lab_menu == 19){upd_lab_19_code(Lab_ex_N);}
+        if(lab_menu == 20){upd_lab_20_code(Lab_ex_N);}
     }
 
     
