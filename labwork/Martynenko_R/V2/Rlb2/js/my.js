@@ -1,5 +1,6 @@
 var semester = 1;
-var lab_menu = +document.getElementById("id_lab_menu").value;
+//var lab_menu = +document.getElementById("id_lab_menu").value;
+var lab_menu = 2;
 
 // PopUp
 // function Pop1Hide(){
@@ -8,17 +9,17 @@ var lab_menu = +document.getElementById("id_lab_menu").value;
 // setTimeout(Pop1Hide,3000)
 
 
-// Мои функции
-function Random(min, max) {
-    return x = Math.floor(Math.random() * (max - min + 1)) + min;
-}
+// // Мои функции
+// function Random(min, max) {
+//     return x = Math.floor(Math.random() * (max - min + 1)) + min;
+// }
  
-function RandMass(length, min, max) {
-    var A = [];
-    for (var i = 0; i < length; i++) {A[i] = Random(min, max); }
-    return A;
-}
-//////////////////////////////
+// function RandMass(length, min, max) {
+//     var A = [];
+//     for (var i = 0; i < length; i++) {A[i] = Random(min, max); }
+//     return A;
+// }
+// //////////////////////////////
 
 function PopUpShow(){
     $("#popup1").show();
