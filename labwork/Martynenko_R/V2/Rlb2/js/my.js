@@ -2,6 +2,7 @@ var semester = 1;
 //var lab_menu = +document.getElementById("id_lab_menu").value;
 var lab_menu = 2;
 
+
 // PopUp
 // function Pop1Hide(){
 //     PopUpHide();
