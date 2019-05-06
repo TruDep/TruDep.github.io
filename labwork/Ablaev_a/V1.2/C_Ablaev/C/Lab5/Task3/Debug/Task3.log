@@ -1,5 +1,0 @@
-﻿  Task3.cpp
-c:\users\user\source\repos\lab5\task3\task3.cpp(14): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
-c:\users\user\source\repos\lab5\task3\task3.cpp(17): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
-c:\users\user\source\repos\lab5\task3\task3.cpp(20): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
-  Task3.vcxproj -> C:\Users\User\source\repos\Lab5\Debug\Task3.exe

@@ -1,3 +1,0 @@
-﻿  first_project.cpp
-c:\users\user\desktop\i_18\first_project\first_project\first_project.cpp(6): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  first_project.vcxproj -> C:\Users\User\Desktop\i_18\first_project\Debug\first_project.exe

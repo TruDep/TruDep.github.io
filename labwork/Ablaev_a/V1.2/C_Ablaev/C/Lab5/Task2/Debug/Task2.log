@@ -1,4 +1,0 @@
-﻿  pch.cpp
-  Task2.cpp
-c:\users\user\source\repos\lab5\task2\task2.cpp(9): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
-  Task2.vcxproj -> C:\Users\User\source\repos\Lab5\Debug\Task2.exe
