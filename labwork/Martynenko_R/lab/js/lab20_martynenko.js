@@ -370,3 +370,62 @@ TuzikFunction("лежать")
 
 
 console.log('_____________________________________');
+
+
+
+
+///////////////////////
+
+function User(firstName,secondName) {
+    this.name = firstName,
+    this.sName = secondName,
+    this.sayHi = function(){
+        console.log("Hi, " + this.sName + " " + this.name);
+    };
+}
+var student1 = new User("Ivanov", "Vasya");
+var student2 = new User("Мартыненко", "Роман");
+
+/////
+
+
+ThreeD = {
+
+    sum: function(k1,k2)
+    {
+        var x = +k1.x;
+        var y = +k1.y;
+        var z = +k1.z;
+        x += +k2.x;
+        y += +k2.y;
+        z += +k2.z;
+
+        console.log("x = " + x);
+        console.log("y = " + y);
+        console.log("z = " + z);
+    }
+}
+
+function Read() {
+    this.read = function () {
+        this.x = +prompt("Коадр X","0");
+        this.y = +prompt("Коадр Y","0");
+        this.z = +prompt("Коадр Z","0");
+    };
+}
+ThreeD.add = function () {
+    var kord = new Read;
+
+    kord.x = 0;
+    kord.y = 0;
+    kord.z = 0;
+
+    return kord;
+}
+
+var kord_1 = ThreeD.add();
+var kord_2 = ThreeD.add();
+
+kord_2.read();
+
+ThreeD.sum(kord_1,kord_2)
